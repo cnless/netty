@@ -215,6 +215,7 @@ public final class EpollDatagramChannel extends AbstractEpollChannel<UnixChannel
             promise.setFailure(e);
             return;
         }
+        promise.setSuccess(null);
     }
 
     @Override
